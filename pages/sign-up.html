@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <nav>
+    <h1>Logo</h1>
+    <ul class="menu">
+      <li class="menu__item"><a href="../index.html">Home</a></li>
+      <li class="menu__item" id="sign-up-link"><a href="./sign-up.html">Sign Up</a></li>
+      <li class="menu__item" id="sign-in-link"><a href="./sign-in.html">Sign in</a></li>
+      <li class="menu__item" id="account-link"><a href="./account.html">Account</a></li>
+    </ul>
+  </nav>
+  <form class="sign-form" id="signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" required placeholder="Your name" id="username">
+    <small class="error-message-sign">- Username should be at least 5 characters long.</small>
+    <input type="email" required placeholder="Your email" id="email">
+    <input type="password" required placeholder="Your password" id="password">
+    <small class="error-message-sign">- Password should be at least 8 characters long.</small>
+    <input type="url" required placeholder="Your photo URL" id="avatar">
+    <button type="submit">Sign Up</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../script/app.js"></script>
+  <script src="../script/sign-up.js"></script>
+</body>
+</html>
